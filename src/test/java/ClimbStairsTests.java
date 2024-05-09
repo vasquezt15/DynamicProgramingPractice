@@ -110,6 +110,5 @@ public class ClimbStairsTests {
         ArrayList<Integer> output =ClimbStairs.lowestCostPathToClimbStairsKStepsSkipRedStairs(8,2, red_stairs, prices);
         Assertions.assertEquals(expected_path, output , "Expected path: " + expected_path.toString() +"\n\n" + " Actual: " + output.toString());
     }
-    //
 
 }
