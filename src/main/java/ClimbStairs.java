@@ -61,8 +61,8 @@ public class ClimbStairs {
     public static int climbStairsKSteps(int n, int k){
         /*
          * Initial Solution
-         * Runtime: O(n)
-         * Space: O(1)
+         * Runtime: O(n*k)
+         * Space: O(n)
          */
         if(n==0 || n==1){
             return 1;
@@ -80,6 +80,38 @@ public class ClimbStairs {
             }
         }
         return n_ways[n];
+    }
+    /*
+     * Problem: Climbing a stair case either k steps at a time. 
+     * Objective Function: F(n) is the number of ways to climb to the nth step
+     * Base Case: F(0) = 1, F(1) = 1
+     * Recurrence Relation: F(n) = F(n-k) + ... + F(n-2) +F(n-1)
+     * Order of Execution: Bottom up
+     * Answer: F(n)
+     * 
+     */
+    public static int climbStairsKStepsOptimized(int n, int k){
+        /*
+         * Optimized Solution
+         * Runtime: O(n*k)
+         * Space: O(k)
+         */
+        if(n==0 || n==1){
+            return 1;
+        }
+
+        int [] n_ways = new int[k];
+        n_ways[0] =1;
+ 
+        for(int i=1;i<=n;i++){
+            for(int j =1; j< k; j++){
+                if(i<j){
+                    continue;
+                }
+                n_ways[i%k] += n_ways[(i-j)%k]; 
+            }
+        }
+        return n_ways[n%k];
     }
 
     
