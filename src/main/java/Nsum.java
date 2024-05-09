@@ -11,8 +11,8 @@ public class Nsum {
      */
 
     public static int n_sum(int n){
-        //This method is the first attempt at a solution for the n_sum problem
-        /*
+         /*
+         * Initial solution
          * Runtime: O(n)
          * Space: O(n)
          */
@@ -24,7 +24,11 @@ public class Nsum {
         return sums[n];
     }
     public static int n_sum_optimized(int n){
-        //This method is optimized for size
+         /*
+         * Space optimized solution
+         * Runtime: O(n)
+         * Space: O(1)
+         */
         int sum =0;
         for(int i=1;i<=n;i++){
             sum= sum + i;
