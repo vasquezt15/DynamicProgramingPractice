@@ -121,5 +121,52 @@ public class ClimbStairs {
         return n_ways[n%k];
     }
 
+    public static int climbStairsKStepsOptimized2(int n, int k){
+        /*
+         * Optimized Solution
+         * Runtime: O(n*k)
+         * Space: O(k)
+         */
+        if(n==0 || n==1){
+            return 1;
+        }
+
+        int [] n_ways = new int[k];
+        n_ways[0] =1;
+        
+        //compute from 1 to n
+        for (int i = 1; i <= n; i++) {
+            int total = 0;
+            for (int j = 1; j <= Math.min(i,k); j++) {
+                total += n_ways[(i - j) % k];
+            }
+            n_ways[i % k] = total;
+        }
+        return n_ways[n%k];
+    }
+    public static int climbStairsKStepsWRedStairs(int n, int k, Boolean [] stairs){
+        /*
+         * Optimized Solution
+         * Runtime: O(n*k)
+         * Space: O(k)
+         */
+        if(n==0 || n==1){
+            return 1;
+        }
+
+        int [] n_ways = new int[k];
+        n_ways[0] =1;
+        
+        //compute from 1 to n
+        for (int i = 1; i <= n; i++) {
+            int total = 0;
+            for (int j = 1; j <= Math.min(i,k); j++) {
+                total += n_ways[(i - j) % k];
+            }
+            n_ways[i % k] = total;
+        }
+        return n_ways[n%k];
+    }
+
     
 }

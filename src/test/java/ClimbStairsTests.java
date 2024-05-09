@@ -62,23 +62,23 @@ public class ClimbStairsTests {
 
     @Test
     void climbStairsKStepsOptimizedTestRunWithTwo() {
-        Assertions.assertEquals(2, ClimbStairs.climbStairsKStepsOptimized(2,2), "Stairs for n=2, k=2 should equal 2");
+        Assertions.assertEquals(2, ClimbStairs.climbStairsKStepsOptimized2(2,2), "Stairs for n=2, k=2 should equal 2");
     }
     @Test
     void climbStairsKStepsOptimizedTestRunWithFiveAndTwo() {
-        Assertions.assertEquals(8, ClimbStairs.climbStairsKStepsOptimized(5,2), "Stairs for n=5, k=2 should equal 8");
+        Assertions.assertEquals(8, ClimbStairs.climbStairsKStepsOptimized2(5,2), "Stairs for n=5, k=2 should equal 8");
     }
     @Test
     void climbStairsKStepsOptimizedTestRunWithThreeAndTwo() {
-        Assertions.assertEquals(3, ClimbStairs.climbStairsKStepsOptimized(3,2), "Stairs for n=3, k=2 should equal 3");
+        Assertions.assertEquals(3, ClimbStairs.climbStairsKStepsOptimized2(3,2), "Stairs for n=3, k=2 should equal 3");
     }
     @Test
     void climbStairsKStepsOptimizedTestRunWithThreeAndThree() {
-        Assertions.assertEquals(4, ClimbStairs.climbStairsKStepsOptimized(3,3), "Stairs for n=3, k=3 should equal 4");
+        Assertions.assertEquals(4, ClimbStairs.climbStairsKStepsOptimized2(3,3), "Stairs for n=3, k=3 should equal 4");
     }
     @Test
     void climbStairsKStepsOptimizedTestRunWithFiveAndThree() {
-        Assertions.assertEquals(13, ClimbStairs.climbStairsKStepsOptimized(5,3), "Stairs for n=5, k=3 should equal 13");
+        Assertions.assertEquals(13, ClimbStairs.climbStairsKStepsOptimized2(5,3), "Stairs for n=5, k=3 should equal 13");
     }
 
 
