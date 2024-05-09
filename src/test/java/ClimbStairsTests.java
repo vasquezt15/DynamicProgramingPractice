@@ -1,5 +1,10 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 
 public class ClimbStairsTests {
@@ -80,6 +85,31 @@ public class ClimbStairsTests {
     void climbStairsKStepsOptimizedTestRunWithFiveAndThree() {
         Assertions.assertEquals(13, ClimbStairs.climbStairsKStepsOptimized2(5,3), "Stairs for n=5, k=3 should equal 13");
     }
+    //avoid red stairs
+    @Test
+    void climbStairsKStepsSkipRedStairsOptimizedTestRunWithThreeAndSeven() {
+        Boolean [] red_stairs = {false,true,false,true,true,false,false};
+        Assertions.assertEquals(2, ClimbStairs.climbStairsKStepsSkipRedStairs(7,3, red_stairs), "Stairs for n=8, k=3, red stairs false,true,false,true,true,false,false should equal 2");
+    }
 
+
+    //lowest possible cost
+    @Test
+    void lowestCostToClimbStairsKStepsSkipRedStairsOptimizedTestRunWithThreeAndSeven() {
+        Boolean [] red_stairs = {false,false,false};
+        int [] prices = {3,2,4};
+        Assertions.assertEquals(6, ClimbStairs.lowestCostClimbStairsKStepsSkipRedStairs(3,2, red_stairs, prices), "Price for n=3, k=2, red stairs all true should equal 6");
+    }
+
+    //optimal path test
+    @Test
+    void lowestCostPathToClimbStairsKStepsSkipRedStairsOptimizedTestRun1() {
+        Boolean [] red_stairs = {false,false,false,false,false,false,false,false};
+        int [] prices = {3,2,4,6,1,1,5,3};
+        ArrayList<Integer> expected_path = new ArrayList(Arrays.asList(0,2,3,5,6,8));
+        ArrayList<Integer> output =ClimbStairs.lowestCostPathToClimbStairsKStepsSkipRedStairs(8,2, red_stairs, prices);
+        Assertions.assertEquals(expected_path, output , "Expected path: " + expected_path.toString() +"\n\n" + " Actual: " + output.toString());
+    }
+    //
 
 }
