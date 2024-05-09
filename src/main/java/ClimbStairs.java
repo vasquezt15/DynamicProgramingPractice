@@ -81,6 +81,7 @@ public class ClimbStairs {
         }
         return n_ways[n];
     }
+
     /*
      * Problem: Climbing a stair case either k steps at a time. 
      * Objective Function: F(n) is the number of ways to climb to the nth step
@@ -102,14 +103,20 @@ public class ClimbStairs {
 
         int [] n_ways = new int[k];
         n_ways[0] =1;
- 
-        for(int i=1;i<=n;i++){
-            for(int j =1; j< k; j++){
-                if(i<j){
-                    continue;
-                }
-                n_ways[i%k] += n_ways[(i-j)%k]; 
+        
+        //intialize n_ways up to k-1
+        for (int i = 1; i < k; i++) {
+            for (int j = 1; j <= i; j++) {
+                n_ways[i] += n_ways[i - j];
             }
+        }
+        //compute from k to n
+        for (int i = k; i <= n; i++) {
+            int total = 0;
+            for (int j = 1; j <= k; j++) {
+                total += n_ways[(i - j) % k];
+            }
+            n_ways[i % k] = total;
         }
         return n_ways[n%k];
     }

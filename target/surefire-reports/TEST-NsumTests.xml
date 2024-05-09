@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter6005189454191096068.jar /Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire 2024-05-08T19-03-51_896-jvmRun1 surefire16149635470481531880tmp surefire_011965522090800577509tmp"/>
+    <property name="sun.java.command" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter9426797467383196394.jar /Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire 2024-05-08T19-52-13_176-jvmRun1 surefire8806963873647761397tmp surefire_06047258757424811668tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/test-classes:/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/classes:/Users/tomasvasquez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/tomasvasquez/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/tomasvasquez/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/tomasvasquez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tomasvasquez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/tomasvasquez/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter6005189454191096068.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter9426797467383196394.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
     <property name="user.name" value="tomasvasquez"/>
