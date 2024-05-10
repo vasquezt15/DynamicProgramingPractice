@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ClimbStairsTests" time="0.032" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ClimbStairsTests" time="0.01" tests="21" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter10543318470001515852.jar /Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire 2024-05-08T20-03-42_193-jvmRun1 surefire9513167432961437784tmp surefire_0101743395180640793tmp"/>
+    <property name="sun.java.command" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter13768732346747836388.jar /Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire 2024-05-10T10-23-53_353-jvmRun1 surefire17897769586697173873tmp surefire_02497475902183376708tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/test-classes:/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/classes:/Users/tomasvasquez/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/tomasvasquez/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/tomasvasquez/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/tomasvasquez/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/tomasvasquez/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/tomasvasquez/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter10543318470001515852.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tomasvasquez/Desktop/DynamicProgrammingPractice/target/surefire/surefirebooter13768732346747836388.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
     <property name="user.name" value="tomasvasquez"/>
@@ -51,21 +51,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="climbStairsKTestRunWithOne" classname="ClimbStairsTests" time="0.016"/>
-  <testcase name="climbStairskTestRunWithFiveAndThree" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairsKTestRunWithOne" classname="ClimbStairsTests" time="0"/>
+  <testcase name="climbStairskTestRunWithFiveAndThree" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairskTestRunWithThreeAndTwo" classname="ClimbStairsTests" time="0"/>
-  <testcase name="climbStairskTestRunWithThreeAndThree" classname="ClimbStairsTests" time="0.001"/>
-  <testcase name="climbStairsKStepsOptimizedTestRunWithFiveAndThree" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairskTestRunWithThreeAndThree" classname="ClimbStairsTests" time="0"/>
+  <testcase name="climbStairsKStepsOptimizedTestRunWithFiveAndThree" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairskTestRunWithTwo" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsTestRunWithFive" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsTestRunWithZero" classname="ClimbStairsTests" time="0"/>
-  <testcase name="climbStairsOptimTestRunWithOne" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairsOptimTestRunWithOne" classname="ClimbStairsTests" time="0"/>
+  <testcase name="lowestCostPathToClimbStairsKStepsSkipRedStairsOptimizedTestRun1" classname="ClimbStairsTests" time="0"/>
+  <testcase name="lowestCostToClimbStairsKStepsSkipRedStairsOptimizedTestRunWithThreeAndSeven" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsKStepsOptimizedTestRunWithFiveAndTwo" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsKStepsOptimizedTestRunWithTwo" classname="ClimbStairsTests" time="0.001"/>
-  <testcase name="climbStairsTestRunWithOne" classname="ClimbStairsTests" time="0"/>
-  <testcase name="climbStairsKTestRunWithZero" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairsTestRunWithOne" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairsKTestRunWithZero" classname="ClimbStairsTests" time="0"/>
+  <testcase name="climbStairsKStepsSkipRedStairsOptimizedTestRunWithThreeAndSeven" classname="ClimbStairsTests" time="0.001"/>
   <testcase name="climbStairskTestRunWithFiveAndTwo" classname="ClimbStairsTests" time="0"/>
-  <testcase name="climbStairsKStepsOptimizedTestRunWithThreeAndTwo" classname="ClimbStairsTests" time="0.001"/>
+  <testcase name="climbStairsKStepsOptimizedTestRunWithThreeAndTwo" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsKStepsOptimizedTestRunWithThreeAndThree" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsOptimTestRunWithFive" classname="ClimbStairsTests" time="0"/>
   <testcase name="climbStairsOptimTestRunWithZero" classname="ClimbStairsTests" time="0"/>

@@ -12,21 +12,8 @@ import java.util.List;
      * Answer: F(n,m) for an nxm price matrix
      * 
      */
-    class Node{
-    int i;
-    int j;
-    int profit;
-    Node(int i, int j, int profit){
-        this.i = i;
-        this.j = j;
-        this.profit = profit;
-    }
-     String toStringNode(){
-        return String.format("Node (%d,%d) profit %d", this.i,this.j,this.profit);
-    }
-}
 public class MaxProfit {
-    public static int maxProfit(int [][] prices){
+    public static ArrayList<Integer> maxProfit(int [][] prices){
         int[][] profits = new int[prices.length][prices[0].length];
         ArrayList<Integer> path = new ArrayList();
         //path.add(0);
@@ -81,12 +68,12 @@ public class MaxProfit {
         //     System.out.printf( node.toStringNode()+ " ");
         // }
         
-        for (int[] row : profits) {
-            for (int element : row) {
-                System.out.print(element + " ");
-            }
-            System.out.println(); // Move to the next line after each row
-        }
+        // for (int[] row : profits) {
+        //     for (int element : row) {
+        //         System.out.print(element + " ");
+        //     }
+        //     System.out.println(); // Move to the next line after each row
+        // }
         //System.out.println(Arrays.toString(profits));
         int i=prices.length-1;
         int j = prices[0].length-1;
@@ -103,7 +90,6 @@ public class MaxProfit {
                 }else{
                     j--;
                 }
-                
             }else if(i>0){
                 current = profits[i-1][j];
                 i--;
@@ -114,7 +100,7 @@ public class MaxProfit {
             }
             path.add(current);
         }
-        System.out.println(path);
-        return profits[prices.length-1][prices[0].length-1];
+        //System.out.println(path);
+        return path;
     }
 }

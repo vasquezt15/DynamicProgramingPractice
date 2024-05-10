@@ -208,7 +208,7 @@ public class ClimbStairs {
         //compute from 1 to n
         for (int i = 1; i <= n; i++) {
             //the red_stairs array contains a flag for stairs 1-n, red_stairs[0] is the flag for the first stair.
-            System.out.printf("Current stair %d\n", i);
+            //System.out.printf("Current stair %d\n", i);
             if(red_stairs[i-1]){
                 //very large costs so this stair is never picked
                 costs[i % k] = 999999;
@@ -221,11 +221,11 @@ public class ClimbStairs {
                     //check if the previos stair is marked off
                     min_cost = Math.min(min_cost,costs[(i - j) % k]);
                     //logger.info(min_cost);
-                    System.out.printf("min cost candidate %d\n", min_cost);
+                    //System.out.printf("min cost candidate %d\n", min_cost);
             }
-            System.out.printf("min cost selected %d\n", min_cost);
+            //System.out.printf("min cost selected %d\n", min_cost);
             costs[i % k] = min_cost + prices[i-1];
-            System.out.printf("Current stair cost %d\n\n\n", costs[i % k]);
+            //System.out.printf("Current stair cost %d\n\n\n", costs[i % k]);
             } 
         }
         return costs[n%k];
@@ -247,7 +247,7 @@ public class ClimbStairs {
         //compute from 1 to n
         for (int i = 1; i <= n; i++) {
             //the red_stairs array contains a flag for stairs 1-n, red_stairs[0] is the flag for the first stair.
-            System.out.printf("Current stair %d\n", i);
+            //System.out.printf("Current stair %d\n", i);
             if(red_stairs[i-1]){
                 //very large costs so this stair is never picked
                 costs[i] = 999999;
@@ -266,18 +266,18 @@ public class ClimbStairs {
                     //logger.info(min_cost);
                     //System.out.printf("min cost candidate %d\n", min_cost);
             }
-            System.out.printf("min cost selected %d stair_index %d \n", min_cost,previous_step);
+            //System.out.printf("min cost selected %d stair_index %d \n", min_cost,previous_step);
             int last_index =path.size()-1;
             if(previous_step!= path.get(last_index)){
                 path.add(previous_step);
             }
             //path.add(previous_step);
             costs[i] = min_cost + prices[i-1];
-            System.out.println("Current path: " +path.toString() + "\n\n");
+            //System.out.println("Current path: " +path.toString() + "\n\n");
             } 
         }
         path.add(n);
-        System.out.println("Current path: " +path.toString() + "\n\n");
+        //System.out.println("Current path: " +path.toString() + "\n\n");
         return path;
     }
 
