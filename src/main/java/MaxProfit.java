@@ -29,7 +29,7 @@ public class MaxProfit {
     public static int maxProfit(int [][] prices){
         int[][] profits = new int[prices.length][prices[0].length];
         ArrayList<Integer> path = new ArrayList();
-        path.add(0);
+        //path.add(0);
         //ArrayList<Node> path = new ArrayList<>();
         //Walk thro
         //path.add(new Node(0,0,prices[0][0]));
@@ -41,6 +41,7 @@ public class MaxProfit {
         Integer previous_profit = 0;
         for(int i=0;i<prices.length;i++){
             for(int j=0;j<prices[0].length;j++){
+                //System.out.printf(" i: %d j: %d \n ",i, j);
                 if(j==0 && i==0){continue;}
                 int up_cell;
                 int left_cell;
@@ -64,9 +65,13 @@ public class MaxProfit {
                     new_profit += max_profit;
                 }
                 profits[i][j] = new_profit;
-                    if(max_profit != previous_profit){
-                        path.add(max_profit);
-                    }
+                //System.out.printf(" i: %d j: %d max_p %d\n ",i, j,new_profit);
+                    //if(max_profit != previous_profit){
+                        //path.add(profits[i][j]);
+                        //System.out.println(path);
+                    //}
+
+                    
                 
             }
 
@@ -75,6 +80,40 @@ public class MaxProfit {
         // for(Node node: path){
         //     System.out.printf( node.toStringNode()+ " ");
         // }
+        
+        for (int[] row : profits) {
+            for (int element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+        //System.out.println(Arrays.toString(profits));
+        int i=prices.length-1;
+        int j = prices[0].length-1;
+        int current = profits[i][j];
+        path.add(current);
+
+        while(i > 0 || j >0){
+            if(i>0 && j>0){
+                int up = profits[i-1][j];
+                int left = profits[i][j-1];
+                current = Math.max(up,left);
+                if(current == up){
+                    i--;
+                }else{
+                    j--;
+                }
+                
+            }else if(i>0){
+                current = profits[i-1][j];
+                i--;
+            }else{
+                current = profits[i][j-1];
+                j--;
+
+            }
+            path.add(current);
+        }
         System.out.println(path);
         return profits[prices.length-1][prices[0].length-1];
     }
